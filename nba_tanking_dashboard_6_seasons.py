@@ -1,5 +1,5 @@
 
-# nba_tanking_dashboard_fixed_score.py
+# nba_tanking_dashboard_6_seasons.py
 
 import pandas as pd
 import streamlit as st
@@ -487,7 +487,7 @@ if "TEAM_NAME" in df.columns and "tanking_score" in df.columns:
 
     with col1:
         st.metric(
-            "Most Tanking Across 5 Seasons",
+            "Most Tanking Across 6 Seasons",
             top_team["TEAM_NAME"],
             round(top_team["total_tanking_score"], 2)
         )
